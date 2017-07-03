@@ -6,4 +6,6 @@ if(process && process.env && process.env.NODE_ENV){
     config = require('./development/config');
 }
 
+config.version='3.0.0';
+
 module.exports = config;

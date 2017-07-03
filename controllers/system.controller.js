@@ -1,21 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var LabelMongo = require('../models/label.model');
+var {JsonResult,CreateFromResult} = require('../viewmodels/JsonResult')
+var config = require('../config')
 
-router.get('/label',function(req,res,next){
-    // var labelEntity = new LabelMongo({
-    //     LabelId:11,
-    //     LabelName:'222',
-    //     LabelCategoryID:21
-    // });
-    // labelEntity.save(function(err){
-    //     if (err) {
-            
-    //     }
-    // });
-    var labelEntitys = LabelMongo.find().exec(function(err,labels){
-        res.json(labels);
-    });
+/**
+ * 获得系统版本号
+ */
+router.get('/version',function(req,res,next){
+   res.json(new JsonResult(true,config.version));
 });
 
 module.exports=router;
