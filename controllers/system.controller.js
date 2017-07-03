@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var mongoose = require('mongoose');
 var LabelMongo = require('../models/label.model');
 
 router.get('/label',function(req,res,next){

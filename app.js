@@ -3,7 +3,7 @@ var ejs = require('ejs');
 var path = require('path');
 var favicon = require('serve-favicon');
 var handlerError = require('./filters/handler-error');
-var mongodb = require('./mongo')();
+var mongodb = require('./config/mongo')();
 
 var app = express();
 
