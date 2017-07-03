@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用添翼CRM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/chat.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <style type="text/css">
+        body {
+            font-family: "微软雅黑";
+        }
+
+        .wxRight>div {
+            display: none;
+        }
+
+        .One {
+            display: block;
+            height: 100%;
+        }
+
+        .selected {
+            color: #fff;
+        }
+
+        .login {
+            margin-top: 307px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login" id="login">
+        <div class="logincontent">
+            <div class="input">
+                <i class="icon-user"></i>
+                <input type="text" name="" id="txtUserName" value="1101" placeholder="请输入用户名" />
+            </div>
+            <div class="input">
+                <i class="icon-pass"></i>
+                <input type="password" id="txtPassword" name="" value="123456" placeholder="请输入密码" />
+            </div>
+            <div>
+                <input type="button" onclick="login()" name="" id="btn_submit" value="登录" class="submit" />
+            </div>
+            <div style="text-align:right; position: relative;top: 40px;right: 20px; color: #465376;">
+                <p>版本信息 <span><%= version %></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+
+        });
+        var login = function name(params) {
+            var loginData = {
+                userName: $('#txtUserName').val(),
+                password: $('#txtPassword').val()
+            };
+
+            if(!loginData.userName){
+                return;
+            }
+            if (!loginData.password) {
+                return;
+            }
+
+
+            $.ajax({
+                url: '/account/login',
+                data: loginData,
+                type: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    if (data && data.state) {
+                        location.href="/home";                        
+                    }
+                },
+                error: function () {
+
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

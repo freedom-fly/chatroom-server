@@ -1,0 +1,494 @@
+.maintTop {
+    width: 100%;
+    float: left;
+    height: 36px;
+    background-color: #d0daf6;
+}
+
+.weixin {
+    float: left;
+    width: 1225px;
+    height: 100%;
+    display: none;
+}
+
+.maintTop li {
+    float: left;
+    width: 140px;
+    overflow: hidden;
+    height: 36px;
+    position: relative;
+}
+
+.maintTop li.select {
+    float: left;
+    border-top-left-radius: 5px;  
+    
+    border-top-right-radius: 15px;
+    background-color: #465376;
+}
+
+.maintTop li p {
+    font-size: 14px;
+    line-height: 36px;
+    color: #2b3244;
+    float: left;
+    width: 85px;
+    height: 36px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.maintTop li.select p {
+    color: #fff;
+}
+
+.maintTop li p.new {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #ff3b30;
+    color: #fff;
+    float: left;
+    line-height: 18px;
+    margin-top: 9px;
+    margin-left: -13px;
+    text-align: center;
+}
+
+.maintTop li img {
+    float: left;
+    width: 26px;
+    height: 26px;
+    margin-top: 4px;
+    margin-right: 12px;
+    border-radius: 26px;
+    margin-left: 10px;
+}
+
+.maintTop .login_success {
+    width: 120px;
+    height: 36px;
+    background-color: #2b3244;
+    position: relative;
+    left: 91%;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.maintTop .login_success .loginName {
+    position: absolute;
+    margin-left: 34%;
+}
+
+.xiala {
+    display: none;
+    width: 692px;
+    height: 240px;
+    background-color: #f5f5f5;
+    position: absolute;
+    /* left: 0; */
+    /* top: 24%; */
+    margin-top: -15px;
+    z-index: 10;
+    overflow: auto;
+}
+
+.xiala ul {
+    float: left;
+    display: inline-block;
+}
+
+.xiala li {
+    width: 100px;
+    float: left;
+    height: 120px;
+}
+
+.xiala li img {
+    margin-left: 20px;
+    border-radius: 60px;
+    margin-top: 14px;
+    width: 70px;
+    height: 70px;
+}
+
+.xiala li p {
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    float: left;
+}
+
+.addbtn {
+    width: 108px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #d1d6e4;
+    cursor: pointer;
+    color: #7a8399;
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+.addbtn:hover {
+    background-color: #48c1ff;
+    color: #fff;
+    border: none;
+}
+
+.addmain {
+    width: 100%;
+    overflow: auto;
+}
+
+.addtitle {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 15px;
+    background-color: #d1d6e4;
+    color: #7a8399;
+    text-align: left;
+}
+
+.add_ul li {
+    width: 350px;
+    height: 62px;
+    border-top: 1px solid #d1d6e4;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -1px;
+    clear: both;
+}
+
+.add_ul li input {
+    float: left;
+    margin-top: 28px;
+}
+
+.add_ul li img {
+    width: 48px;
+    height: 46px;
+    float: left;
+    margin: 10px 13px 0 13px;
+}
+
+.right .top .add_ul li p {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    height: 58px;
+    line-height: 58px;
+    text-align: left;
+    padding-top: 6px;
+    margin-top: 22px;
+}
+
+.add_ulP {
+    margin-top: 22px;
+}
+
+.right .consh1 .meta_Split {
+    overflow: hidden;
+    display: block;
+    margin-left: 24%;
+    margin-bottom: 10px;
+    height: 30px;
+    margin-top: 35px;
+}
+
+.right .consh1 .meta_Split .lable {
+    float: left;
+    font-size: 14px;
+    margin-right: 10px;
+    color: rgb(122, 131, 153);
+    font-weight: 100;
+    margin-top: 2px;
+}
+
+.right .consh1 .meta_Split select {
+    position: relative;
+    width: 218px;
+    right: 116px;
+    height: 26px;
+    color: rgb(122, 131, 153);
+    text-indent: 10px;
+}
+
+.right .consh1 .meta_content {
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 24%;
+    height: 136px;
+}
+
+.right .consh1 .meta_content .meta_send {
+    float: left;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #7a8399;
+    font-weight: 100;
+    margin-top: 2px;
+}
+
+.right .consh1 .meta_content .meta_kuang {
+    /* position: relative; */
+    width: 218px;
+    right: 116px;
+    height: 136px;
+    border: 1px solid #7a8399;
+    display: block;
+    margin-left: 10.5%;
+    text-align: left;
+}
+
+.consh1 .meta_button {
+    display: inline-block;
+    width: 218px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: #48c1ff;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: none;
+}
+
+.meta_content .meta_kuang {
+    width: 650px;
+    height: 80px;
+    outline: none;
+    margin: auto;
+    overflow: auto;
+    border: none;
+}
+
+.right .meta_content {
+    width: 100%;
+    height: 180px;
+}
+
+.add_ul label {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #999999;
+    border-radius: 15px;
+    float: left;
+    display: block;
+    margin-top: 24px;
+}
+
+.add_ul label i {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #a6a6a6;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: none;
+}
+
+.meta_number {
+    /* position: relative; */
+    width: 180px;
+    right: 116px;
+    height: 75px;
+    border: 1px solid #d1d6e4;
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    outline: none;
+    text-indent: 2px;
+}
+
+
+/*自动发朋友圈*/
+
+.right .Automatic_frirnds li {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: auto;
+    border-bottom: 1px solid #d1d6e4;
+    position: relative;
+    cursor: pointer;
+}
+
+.right2 .Automatic_frirnds {
+    display: block;
+}
+
+.right .Automatic_frirnds li .img_send {
+    margin: 10px;
+}
+
+.right .Automatic_frirnds li .img_send img {
+    width: 48px;
+    height: 46px;
+    border-radius: 48px;
+    margin-top: 8px;
+}
+
+.right .Automatic_frirnds .friend_wenzi p {
+    color: #2b3244;
+    margin-left: 64px;
+    margin-top: -40px;
+    font-family: "微软雅黑";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400px;
+}
+
+.right .Automatic_frirnds .input_kuang {
+    width: 600px;
+    height: auto;
+    background-color: #e8edfa;
+    margin: auto;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #8991a6;
+    padding: 14px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    border-radius: 5px;
+}
+
+.right .Automatic_frirnds .input_kuang .friendLink{
+    overflow:hidden;
+    word-break: break-all;
+}
+
+.right .Automatic_frirnds .friend_picture img {
+    width: 146px;
+    height: 146px;
+    margin-bottom: 12px;
+    margin-left: 46px;
+}
+
+.right .Automatic_frirnds .friend_time p {
+    margin-left: 56px;
+    width: 100%;
+    color: #7a8399;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "微软雅黑";
+}
+
+.qwer-right i {
+    width: 12px;
+    height: 11px;
+    display: block;
+    float: right;
+    margin-right: 66px;
+    margin-top: 2px;
+}
+
+.qwer-right span {
+    float: right;
+    color: #7a8399;
+    font-size: 12px;
+    margin-right: -25px;
+}
+.qwer-content {
+    width: 600px;
+    margin: auto;
+    background-color: #e8edfa;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: none;
+    position: relative;
+}
+.qwer-top {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #d1d6e4;
+}
+.qwer-top i {
+    display: block;
+    margin: 9px 0 0 11px;
+    float: left;
+}
+.qwer-top p {
+    float: left;
+    color: #7a8399;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 30px;
+}
+.qwer-pinglun {
+    font-size: 12px;
+    line-height: 30px;
+}
+.qwer-pinglun p{
+    margin-left: 10px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #7a8399;
+    color: #7a8399;
+    margin-top: 10px;
+    padding:1px;
+    margin-left: 4px;
+}
+.btn:hover{
+    background-color: #48c1ff;
+    border: 1px solid #48c1ff;
+    color: #fff;
+}
+.checkbutton{
+    display: inline-block;
+    width: 154px;
+    text-align: center;
+    color: #48c1ff;
+    line-height: 40px;
+    border:1px solid #48c1ff;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    position: relative;
+    top: 40px;
+    right: 44px;
+}
+.checkbutton:hover{
+    color: #48c1ff;
+}
+.checkcirclebutton{
+    display: inline-block;
+    width: 154px;
+    text-align: center;
+    color: #48c1ff;
+    line-height: 40px;
+    border:1px solid #48c1ff;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.checkcirclebutton:hover{
+    color: #48c1ff;
+}

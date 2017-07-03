@@ -1,0 +1,17 @@
+{
+  "name": "express_self",
+  "version": "1.0.0",
+  "description": "自己测试搭建模板",
+  "main": "./bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "mongoose": "^4.10.6",
+    "serve-favicon": "^2.4.2"
+  }
+}

@@ -1,0 +1,384 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+input:focus{
+	outline: none;
+}
+body{
+	background: url("../images/bg.png");
+}
+a:active,a:hover,a:focus{
+	text-decoration: none;
+}
+.f1{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.fs10{
+	font-size: 10px;
+}
+.fs12{
+	font-size: 12px;
+}
+.fs14{
+	font-size: 14px;
+}
+.guocontainer{
+	width: 960px;
+	height: 722px;
+	border-radius: 5px;
+	margin: auto;
+	background: #fff;
+	overflow: hidden;
+}
+.left{
+	width: 50px;
+	height: 100%;
+	background-color: #2b3244;
+	position: relative;
+}
+.center{
+	width: 218px;
+	height:100%;
+	overflow-x:hidden;
+	background-color: #e8edfa;
+}
+.right{
+	width: 692px;
+	height: 100%;
+}
+.left li{
+	width: 50px;
+	height: 60px;
+	background-color: #2b3244;
+	cursor: pointer;
+}
+.left li.selected{
+	background-color: #465376;
+}
+.left li.selected i.iconcss:before{
+	color: #fff;
+}
+.bottomUl{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.center .top img{
+	width: 90px;
+	height: 70px;
+	border-radius: 90px;
+	border: none;
+	margin: auto;
+	margin-top: 20px;
+	display: block;
+}
+.center .top p{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #2b3244;
+	margin-top:10px;
+	font-family: "微软雅黑";
+}
+.center .top input{
+	width: 196px;
+	height: 30px;
+	border: 1px solid #d1d6e4;
+	color: #2b3244;
+	display: block;
+	margin: auto;
+	text-indent: 10px;
+	margin-top: 10px;
+	font-family: "微软雅黑";
+}
+.center .bottom li{
+	width: 218;
+	display: block;
+	margin: auto;
+	height: 57px;
+	border-bottom: 1px solid #d1d6e4;
+	position: relative;
+	cursor: pointer;
+}
+.center .bottom li.activecontact{
+	background-color: #dadfec;
+}
+/*.center .bottom li:hover{
+	background-color: #7a8399;
+}*/
+.center .bottom .lianxi{
+	width: 218px;
+	display: inline-block;
+	margin: auto;
+	height: 26px;
+	background-color: #d1d6e4;
+	position: relative;
+}
+.center .bottom .lianxi .zimu{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	margin: 0 8px;
+
+}
+.center .bottom .img{
+	width: 50px;
+	height: 100%;
+	margin-left: 10px;
+}
+.center .bottom .img img{
+	width: 48px;
+	height: 46px;
+	border-radius: 48px;
+	margin-top: 8px;
+}
+.center .bottom .content p.name{
+	color: #2b3244;
+	margin: 20px 0 10px 0;
+	font-family: "微软雅黑";
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 120px;
+}
+.center .bottom .content p.time{
+}
+.right .top{
+	width: 100%;
+}
+.right .top img{
+	width: 150px;
+    height: 132px;
+    border-radius: 150px;
+    border: none;
+    margin: auto;
+    margin-top: 180px;
+    display: block;
+}
+.right .top p{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #2b3244;
+	font-family: "微软雅黑";
+	font-size: 18px;
+    position: relative;
+    left: -18px;
+}
+.right .top .beizhu{
+	width: 100%;
+    color: #7a8399;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.right .top .beizhu span{
+	width: 100%;
+    color: #2b3244;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    margin-left: 10px;
+}
+.consh{
+	text-align: center;
+}
+.consh .button{
+	display: inline-block;
+    width: 140px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background-color: #48c1ff;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-top: 10px;
+}
+.modal-dialog{
+	position: absolute;
+	width: 600px;
+	height: 388px;
+	margin:0;
+	top: 50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -300px;
+}
+.modal-content{
+	position: relative;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+.mylogoutcontent{
+	margin-top:40%; 
+	position: relative;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+.modal-header{
+	background-color: #e8edfa;
+	padding: 11px;
+	border-radius: 5px 5px 0 0;
+}
+.modal-title{
+	font-size: 14px;
+	color: #2b3244;
+}
+.close{
+	color: #2b3244;
+}
+.modal-body{
+
+}
+.main{
+	overflow: hidden; 
+	height: 287px;
+	margin-top: 26px; 
+} 
+.main:after{
+	clear: both;
+}
+.leftnav{
+	float: left;
+	/*width: 140px;*/
+	width: 24%;
+	text-align: right;
+	height: 287px;
+	border-right: 1px dotted #e8edfa; 
+	font-size: 14px;
+}
+.leftnav ul li{
+	padding: 6px 20px;
+	position: relative;
+}
+.leftnav ul li a{
+	color: #2b3244;  
+}
+.leftnav ul li a:hover,.leftnav ul li a:active,.leftnav ul li a:focus{
+	text-decoration: none;
+}
+.leftnav ul li.active a{
+	color: #48c1ff;
+}
+.ciclepoint{
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	background-color: #48c1ff;
+	position: absolute;
+	top: 42%; 
+    right: -3px;
+    border-radius: 6px;
+}
+.dialogLogout{
+	width: 400px;
+}
+.rightCon{
+	float: right; 
+	width: 74%;
+	margin: 0 auto;
+	text-align: center;
+}
+.visible{
+	display: block;
+}
+.invisible{
+	display: none;
+}
+.usertext{
+	color: #2b3244;
+	font-size: 16px;
+	margin: 14px 0px;
+}
+.btnSure{
+	background-color: #48c1ff;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+}
+.btncancel{
+	background-color: #2b3244;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+}
+.btntablesure{
+	margin-top:20px;
+	padding: 10px 64px;
+}
+.alterPass{
+	width: 237px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.alterPass tr td.labeltd{
+	text-align: right;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 20px;  
+}
+.inputPass{
+	border: 1px solid #d1d6e4;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 15px;
+    text-indent: 10px;
+}
+.logoutMain{
+	width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 13px; 
+}
+.logoutMain p{
+	color: #7a8399;
+	font-size: 14px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.versionp{
+	color: #7a8399;
+	margin-top:20px;
+}
+.versionp span{
+	color: #2b3244;
+	padding-left: 20px;
+}
+.footer{
+	text-align: center;
+	color: #7a8399; 
+	margin-top: 100px;
+}
+#content div{
+	display: none;
+}
+#content .consh{
+	display: block;
+}
+#title .titsh{
+	background-color: #dadfec;
+	color:#fff;
+}

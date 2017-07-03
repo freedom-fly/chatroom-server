@@ -1,0 +1,152 @@
+.right .middle li.leftli .content {
+    position: relative;
+    margin-top: 40px;
+}
+.f1 {
+    float: left;
+    height: 100%;
+}
+.right .middle li.leftli .content p.jiao {
+    width: 0;
+    height: 0;
+    border-top: 7px solid #e8edfa;
+    border-left: 7px solid transparent;
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    left: -6px;
+    /* top: 0; */
+}
+.right .middle li.leftli .content p {
+    max-width: 400px;
+    color: #000;
+    background-color: #e8edfa;
+    padding: 8px;
+    line-height: 18px;
+    font-family: "微软雅黑";
+}
+.right .middle li.leftli .content div {
+    max-width: 400px;
+    /* color: #7a8399; */
+    background-color: #e8edfa;
+    padding: 8px;
+    line-height: 18px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.fs12 {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.app .title {
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: -3px;
+    font-size: 14px;
+    width: 244px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.title {
+    width: 100%;
+    height: 20px;
+    /* background-color: #d1d6e4; */
+    color: #8d8c8d;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.app .cover {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin-right: 10px;
+}
+img {
+    border: none;
+    border: 0;
+}
+.right .middle li.leftli .content p {
+    max-width: 400px;
+    color: #000;
+    background-color: #e8edfa;
+    padding: 8px;
+    line-height: 18px;
+    font-family: "微软雅黑";
+}
+.app .desc {
+    overflow: hidden;
+    /* color: #888; */
+    max-height: 5em;
+    word-break: break-all;
+    max-width: 160px;
+    font-size: 12px;
+}
+.card {
+    margin: 2px;
+    width: 184px;
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    height: 92px;
+}
+.card_bd {
+    border-bottom: 1px solid #d1d6e4;
+    width: 204px;
+    margin-left: -13px;
+    height: 64px;
+    margin-bottom: 7px;
+}
+.card_avatar {
+    display: table-cell;
+    vertical-align: middle;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+.card-img {
+    width: 46px;
+    height: 46px;
+    margin-left: -6px;
+    margin-top: -12px;
+}
+.info {
+    margin-left: 40px;
+    margin-top: -65px;
+}
+.card_hd {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.app {
+    margin: 2px;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    max-width: 300px;
+    min-width: 250px;
+}
+.title {
+    width: 100%;
+    height: 20px;
+    /* background-color: #d1d6e4; */
+    color: #8d8c8d;
+    line-height: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.app .desc {
+    overflow: hidden;
+    /* color: #888; */
+    max-height: 5em;
+    word-break: break-all;
+    max-width: 160px;
+    font-size: 12px;
+}

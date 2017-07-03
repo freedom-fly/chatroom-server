@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+
+var http = require('http');
+
+var config = require('../config/');
+
+var server = http.createServer(app);
+
+var io = require('../socket')(server);
+
+var port = config.port;
+
+app.set('port',port);
+server.listen(port);
+
+server.on('listening',onListening);
+server.on('error',onError);
+
+
+function onError(error) {
+    console.error(error);
+}
+
+function onListening() {
+    var addr = server.address();
+    console.log('listening on ['+addr.address+']:'+addr.port);
+}

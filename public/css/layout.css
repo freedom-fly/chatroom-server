@@ -1,0 +1,397 @@
+/*font-ico*/
+
+@font-face {
+    font-family: 'icoWx';
+    src: url('fonts/icoWx.eot?pyhon2');
+    src: url('fonts/icoWx.eot?pyhon2#iefix') format('embedded-opentype'), url('fonts/icoWx.ttf?pyhon2') format('truetype'), url('fonts/icoWx.woff?pyhon2') format('woff'), url('fonts/icoWx.svg?pyhon2#icoWx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icoWx' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-xiaoxitongzhi:before {
+  content: "\e91c";
+  color: #878fa3;
+}
+
+.icon-add:before {
+    content: "\e921";
+    color: #48c1ff;
+}
+
+.icon-comment:before {
+    content: "\e922";
+}
+
+.icon-complete:before {
+    content: "\e923";
+    color: #48c1ff;
+}
+
+.icon-delete:before {
+    content: "\e924";
+    color: red;
+}
+.icon-delete1:before {
+    content: "\e924";
+    color: red;
+}
+
+.icon-shangla2:before {
+    content: "\e91b";
+    color: #7a8399;
+    font-size: 10px;
+}
+
+.icon-folder:before {
+    content: "\e925";
+}
+
+.icon-like:before {
+    content: "\e926";
+}
+.icon-under2:before {
+  content: "\e90e";
+  color: #7a8399;
+}
+.icon-mini-refresh:before {
+    content: "\e927";
+    color: #7a8399;
+}
+
+.icon-pengyouquan:before {
+    content: "\e928";
+    color: #7a8399;
+}
+
+.icon-shangla:before {
+    content: "\e929";
+}
+
+.icon-xingbiaohaoyou:before {
+    content: "\e930";
+}
+
+.icon-revise:before {
+    content: "\e90c";
+}
+
+.icon-revise1:before {
+    content: "\e90c";
+}
+
+.icon-revise2:before {
+    content: "\e90c";
+}
+
+.icon-revise3:before {
+    content: "\e90c";
+}
+
+.icon-search:before {
+    content: "\e900";
+}
+
+.icon-chat:before {
+    content: "\e901";
+    color: #7a8399;
+}
+
+.icon-emoji:before {
+    content: "\e902";
+    color: #878fa3;
+}
+
+.icon-exit:before {
+    content: "\e903";
+    color: #7a8399;
+}
+
+.icon-lianxiren:before {
+    content: "\e904";
+    color: #7a8399;
+}
+
+.icon-setting:before {
+    content: "\e905";
+    color: #7a8399;
+}
+
+.icon-pass:before {
+    content: "\e906";
+}
+
+.icon-user:before {
+    content: "\e907";
+}
+
+.icon-man:before {
+    content: "\e908";
+    color: #51a3ff;
+}
+
+.icon-woman:before {
+    content: "\e909";
+    color: #ffd4dc;
+}
+
+.icon-wenjianjia:before {
+    content: "\e90b";
+    color: #878fa3;
+}
+
+.icon-yuyin:before {
+    content: "\e90a";
+}
+
+.icon-message:before {
+    content: "\e90d";
+    color: #30bf30;
+}
+
+.icon-under:before {
+    content: "\e90e";
+    color: #7a8399;
+}
+
+.icon-under1:before {
+    content: "\e90e";
+    color: #7a8399;
+}
+
+.icon-group:before {
+    content: "\e90f";
+    color: #7a8399;
+}
+
+.icon-message_logg:before {
+    content: "\e910";
+    color: #7a8399;
+}
+
+.icon-icon-diyiye:before {
+    content: "\e911";
+}
+
+.icon-icon-houyiye:before {
+    content: "\e912";
+}
+
+.icon-icon-guanbi:before {
+    content: "\e913";
+}
+
+.icon-icon-qianyiye:before {
+    content: "\e914";
+}
+
+.icon-icon-rili:before {
+    content: "\e915";
+}
+
+.icon-icon-zuihouyiye:before {
+    content: "\e916";
+}
+
+.icon-up:before {
+    content: "\e917";
+    color: #7a8399;
+}
+
+.icon-down:before {
+    content: "\e918";
+    color: #7a8399;
+}
+
+.icon-group_message:before {
+    content: "\e919";
+    color: #7a8399;
+}
+
+.icon-add_friends:before {
+    content: "\e91a";
+    color: #7a8399;
+}
+
+.icon-chat {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+
+.icon-lianxiren {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+
+.icon-pengyouquan {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+
+.icon-shangla2:before {
+    content: "\e91b";
+    color: #7a8399;
+    font-size: 10px;
+}
+
+.icon-under1 {
+    position: relative;
+}
+
+.icon-group {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+.icon-under2{
+  margin-top: 8px;
+}
+.icon-group_message {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+
+.icon-setting {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+
+.icon-add_friends {
+    position: relative;
+    left: 18px;
+    top: 22px;
+    font-size: 18px;
+}
+.icon-xiaoxitongzhi{
+    position: relative;
+    font-size: 18px;
+    top: -62px;
+    left: 58px;
+}
+.icon-search {
+    position: relative;
+    left: 180px;
+    top: -24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.icon-down {
+    margin-left: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.icon-up {
+    margin-left: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.icon-emoji {
+    font-size: 18px;
+    position: relative;
+    top: -3px;
+}
+
+.icon-wenjianjia {
+    font-size: 18px;
+    position: relative;
+    left: 28px;
+    top: -32px;
+}
+
+.icon-man {
+    position: relative;
+    left: 74px;
+    top: -19px;
+    font-size: 14px;
+}
+
+.icon-woman {
+    position: relative;
+    left: 66px;
+    top: -19px;
+    font-size: 14px;
+}
+
+.icon-yuyin {
+    background-size: 100% 100%;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+.icon-revise {
+    position: relative;
+    font-size: 14px;
+    left: -22px;
+    top: -20px;
+}
+
+.icon-message {
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+.icon-under {
+    position: relative;
+    font-size: 18px;
+    top: 4px;
+}
+
+.icon-message_logg {
+    font-size: 18px;
+    position: relative;
+    left: 559px;
+    top: -64px;
+}
+
+.icon-icon-diyiye {
+    position: relative;
+    top: 3px;
+}
+
+.icon-icon-houyiye {
+    position: relative;
+    top: 3px;
+}
+
+.icon-icon-qianyiye {
+    position: relative;
+    top: 3px;
+}
+
+.icon-icon-zuihouyiye {
+    position: relative;
+    top: 3px;
+}
+
+.icon-icon-rili {
+    position: relative;
+    top: 3px;
+}

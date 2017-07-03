@@ -1,0 +1,653 @@
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+form,
+input,
+textarea,
+img,
+b,
+a,
+span,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    font-family: "微软雅黑";
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+}
+
+a,
+a:active,
+a:link,
+a:visited,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    border: 0;
+}
+
+input,
+textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    border: 0;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+:-moz-placeholder {
+    color: #666;
+}
+
+::-moz-placeholder {
+    color: #666;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #666;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #666;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+table,
+tr,
+td {
+    border: none;
+    border: 0;
+}
+
+.rightmenu {
+    width: 314px;
+    border-left: 1px solid #d1d6e4;
+    height: 630px;
+    float: right;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.rightmenu li {
+    /*width: 100%;*/
+    margin-bottom: 2px;
+}
+
+.li-content {
+    display: none;
+}
+
+.li-content .record {
+    display: block;
+}
+
+.chat_huashucontent {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.rightmenu li .li-top {
+    position: relative;
+    width: 314px;
+    height: 30px;
+    border: 1px solid #d1d6e4;
+    border-left: none;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #e8edfa;
+    cursor: pointer;
+}
+
+.rightmenu li .li-top p {
+    margin-left: 15px;
+    color: #2b3244;
+    font-weight: 500;
+}
+
+.rightmenu li .li-top i {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 23px;
+    font-size: 18px;
+}
+
+.rightmenu li .li-top .icon-under1 {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 21px;
+    font-size: 18px;
+}
+
+.rightmenu li .li-top .icon-shangla2 {
+    position: absolute;
+    top: 6px;
+    right: 23px;
+    font-size: 10px;
+}
+
+.textarea {
+    width: 263px;
+    height: 118px;
+    background-color: #e8edfa;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    padding: 11px;
+    color: #7a8399;
+    border: none;
+}
+
+.btn-save,
+.save-user {
+    width: 62px;
+    height: 30px;
+    border-radius: 3px;
+    color: #7a8399;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #7a8399;
+    margin-top: 10px;
+    margin-left: 142px;
+}
+
+.save-user:hover,
+.edit-user:hover {
+    background-color: #48c1ff;
+    border: 1px solid #48c1ff;
+    color: #fff;
+}
+
+.btn-edit,
+.edit-user {
+    width: 62px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #7a8399;
+    color: #7a8399;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.kuanjie-top {
+    width: 310px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.kuanjie-top p {
+    width: 20%;
+    text-align: center;
+    font-size: 14px;
+    color: #7a8399;
+    float: left;
+    cursor: pointer;
+}
+
+.task-top {
+    width: 310px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.task-top p {
+    width: 33.3%;
+    text-align: center;
+    font-size: 14px;
+    color: #7a8399;
+    float: left;
+    cursor: pointer;
+}
+
+.kuanjie-top p.selected {
+    color: #48c1ff;
+}
+
+.fenzu-top {
+    width: 275px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    background-color: #e8edfa;
+    color: #2b3244;
+    position: relative;
+    cursor: pointer;
+}
+
+.fenzu-top i.icon-folder {
+    width: 14px;
+    height: 12px;
+    display: block;
+    margin: 9px 0 0 20px;
+    float: left;
+}
+
+.fenzu-top p {
+    max-width: 140px;
+    float: left;
+    font-size: 14px;
+    color: #2b3244;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fenzu-top i.icaozuo {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 8px;
+    right: 15px;
+    display: block;
+    float: right;
+}
+
+.huifu-li {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.huifu-li i {
+    position: absolute;
+    left: 35px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    display: none;
+}
+
+.p-bianji {
+    border-bottom: 1px solid #d1d6e4;
+    width: 180px;
+    height: auto;
+    line-height: 25px;
+    outline: none;
+    margin: auto;
+}
+
+.shoecang {
+    margin-top: 15px;
+}
+
+.shoucang-img {
+    width: 148px;
+    height: 86px;
+    margin: 15px 0 0 59px;
+    cursor: pointer;
+}
+
+.shoucang-video {
+    width: 148px;
+    height: 86px;
+    margin: 15px 0 0 59px;
+    cursor: pointer;
+}
+
+.rightmenu li .li-top .icon-mini-refresh {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 79px;
+}
+
+.rightmenu li .li-top .pshuaxin {
+    color: #7a8399;
+    position: absolute;
+    top: 0;
+    right: 41px;
+}
+
+.huashu-li p {
+    min-height: 25px;
+    width: 100%;
+    padding-left: 58px;
+    line-height: 20px;
+    margin-top: 15px;
+    color: #7a8399;
+    border-bottom: 1px solid #d1d6e4;
+    cursor: pointer;
+}
+
+.huaxiang-p {
+    width: 73px;
+    text-align: right;
+    color: #7a8399;
+    float: left;
+    line-height: 37px;
+}
+
+.huaxiang-txt {
+    width: 150px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.huaxiang-bianji {
+    border-bottom: 1px solid #d1d6e4;
+}
+
+.huaxiang-li {
+    position: relative;
+}
+
+.icon-revise3 {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+}
+
+.icon-complete {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 24px;
+}
+
+.fenzu-li {
+    margin-bottom: 10px;
+}
+
+.fenzu-li p {
+    width: 211px;
+    line-height: 20px;
+    margin-left: 59px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fenzu .btn-save {
+    margin-left: 228px;
+    background-color: #fff;
+    border: 1px solid #7a8399;
+    color: #7a8399;
+}
+
+.fenzu .btn-save:hover {
+    background-color: #48c1ff;
+    border: 1px solid #48c1ff;
+    color: #fff;
+}
+
+.dn {
+    display: none;
+}
+
+.right2 {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.save-user {
+    margin-left: 226px;
+    display: none;
+}
+
+.edit-user {
+    margin-left: 226px;
+}
+
+.huashu_img {
+    max-width: 200px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.quick_img {
+    max-width: 200px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #a6a6a6;
+}
+
+.quick_reply {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.my_collect {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.Fastquick_fenzu {
+    border: 1px solid #d1d6e4;
+    height: 80px;
+    margin-top: 20px;
+    width: 220px;
+    margin-left: 60px;
+    overflow-x: hidden;
+}
+
+.Fastquick_content {
+    border: 1px solid #d1d6e4;
+    height: 80px;
+    margin-top: 20px;
+    width: 220px;
+    margin-left: 60px;
+    overflow-x: hidden;
+}
+
+.Fastupdate_content {
+    border: 1px solid #d1d6e4;
+    height: 80px;
+    margin-top: 20px;
+    width: 220px;
+    margin-left: 60px;
+    overflow-x: hidden;
+}
+
+.icon-add {
+    position: relative;
+    left: -58px;
+    top: 8px;
+}
+
+.icon-delete {
+    position: relative;
+    left: -2px;
+    top: 8px;
+}
+
+.icon-delete1 {
+    position: relative;
+    left: 20px;
+    top: 12px;
+}
+
+.icon-revise2 {
+    position: relative;
+    left: -12px;
+    top: 8px;
+}
+
+.chat_task {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.chattask-li {
+    width: 314px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.chattask-li p {
+    width: 37%;
+    text-align: center;
+    font-size: 14px;
+    color: #7a8399;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.chattask-top {
+    width: 314px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.chattask-top p {
+    width: 33.3%;
+    text-align: center;
+    font-size: 14px;
+    color: #2b3244;
+    float: left;
+    cursor: pointer;
+}
+
+.user_figure {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.search_task {
+    height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.searchtask-li {
+    width: 314px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.searchtask-li p {
+    width: 33.3%;
+    text-align: center;
+    font-size: 14px;
+    color: #7a8399;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 30px;
+}
+
+.searchtask-top {
+    width: 314px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.searchtask-top p {
+    width: 33.3%;
+    text-align: center;
+    font-size: 14px;
+    color: #2b3244;
+    float: left;
+    cursor: pointer;
+}
+
+.middle .loading {
+    text-align: center;
+    font-size: 14px;
+    color: #6b6f7c;
+}
+
+.middle .loading img {
+    vertical-align: -3px;
+    margin-right: 5px;
+    position: absolute;
+    top: 276px;
+}
+
+
+/* .progress_bar .progress {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+} */
+
+.progress_bar {
+    height: 12px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #fff !important;
+}
+
+.progresses {
+    display: block;
+    height: 100%;
+    background: #35a328;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.stopvideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -16px;
+    margin-top: -16px;
+}
+.mostsendpic{
+    position: absolute;
+    top: -3px;
+    left: 76px;
+}
+.mostsendgrouppic{
+    position: absolute;
+    top: -3px;
+    left: 106px;
+}
+
+
