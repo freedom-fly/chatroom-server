@@ -1,6 +1,7 @@
 var express = require('express');
 var ejs = require('ejs');
 var path = require('path');
+var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
 var handlerError = require('./filters/handler-error');
 var mongodb = require('./config/mongo')();
@@ -16,6 +17,12 @@ app.use(favicon(path.join(__dirname,'favicon.png')));
 app.engine('html',ejs.renderFile);
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','html');
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 
 //路由

@@ -1,22 +1,16 @@
 var express = require('express');
-var bodyParser = require('body-parser');
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
 var router = express.Router();
-router.get('/', function (req, res, next) {
-    res.render('account/index', {
-        version: '3.0.0'
-    });
-});
+var {JsonResult,CreateFromResult} = require('../viewmodels/JsonResult')
 
-router.post('/login', urlencodedParser, function (req, res, next) {
-    var userName = req.body.userName;
+router.post('/login', function (req, res, next) {
+    var staffId = req.body.staffId;
     var password = req.body.password;
-    if (userName && password) {
-        res.cookie('staffId',userName);
-        res.json({ state: true });
+    if (staffId && password) {
+        res.cookie('staffId',staffId);
+        res.json(new JsonResult(true,{staffId}));
         return;
     }
-    res.json({ state: false });
+    res.json(new JsonResult(false,null,'无效的工号或密码'));
 });
 
 module.exports = router;
